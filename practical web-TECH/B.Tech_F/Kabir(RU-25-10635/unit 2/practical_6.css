@@ -1,0 +1,18 @@
+/* External CSS */
+h2 {
+    color: #007acc;
+    border-bottom: 2px solid #00ffcc;
+    padding-bottom: 5px;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
+article h3 {
+    color: #005fa3;
+}
+
+a {
+    transition: 0.3s;
+}

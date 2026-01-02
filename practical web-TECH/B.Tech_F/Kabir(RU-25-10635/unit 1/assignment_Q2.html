@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sadak Saathi Dashboard</title>
+
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background:#eef3f8; }
+
+    .header {
+      background: linear-gradient(90deg, #5a3ff6, #8b5cf6);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .layout {
+      padding: 18px;
+    }
+
+    .sidebar,
+    .content {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+
+    h2, h3 {
+      margin-top: 0;
+      color:#4b4b4b;
+    }
+
+    /* 600–900px → FLOAT layout */
+    @media (min-width:600px) and (max-width:900px) {
+      .sidebar {
+        float: left;
+        width: 30%;
+      }
+      .content {
+        float: left;
+        width: 70%;
+      }
+      .layout::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+
+    /* >900px → FLEXBOX layout */
+    @media (min-width:900px) {
+      .layout {
+        display: flex;
+        gap: 18px;
+      }
+      .sidebar {
+        width: 260px;
+      }
+      .content {
+        flex: 1;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <header class="header">SADAK SAATHI SYSTEM</header>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <h3>Sidebar</h3>
+      <p>Navigation / menu coming soon</p>
+    </aside>
+
+    <main class="content">
+      <h2>Smart Road Pothole Detection System</h2>
+      <p>
+        <strong>Sadak Saathi</strong> is an AI-powered solution designed to detect road
+        potholes using image and sensor data, helping authorities repair damaged
+        roads faster and prevent accidents.
+      </p>
+
+      <h3>How It Works</h3>
+      <ul style="padding-left:20px;">
+        <li>Mobile app captures road images automatically</li>
+        <li>AI model detects potholes with high accuracy</li>
+        <li>GPS tagging marks exact location</li>
+        <li>Data sent to centralized dashboard</li>
+        <li>Authorities receive real-time alerts</li>
+      </ul>
+
+      <h3>Key Features</h3>
+      <ul style="padding-left:20px;">
+        <li>Automatic detection using Computer Vision</li>
+        <li>Heatmap of high-risk road zones</li>
+        <li>Priority-based repair tracking</li>
+        <li>User reporting & verification</li>
+        <li>Admin monitoring dashboard</li>
+      </ul>
+
+      <h3>Expected Impact</h3>
+      <p>
+        Reduced road accidents, faster maintenance response, improved road quality,
+        and a smarter city-level infrastructure monitoring system.
+      </p>
+    </main>
+
+  </div>
+
+</body>
+</html>
